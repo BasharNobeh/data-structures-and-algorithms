@@ -151,10 +151,14 @@ const listFoods = (recipe) => {
   
   result = ing.map((element => {
     let split = element.split(' ');
-    let str = split[3]+" " ;
+    let str = split[2]+" " ;
     if(split[3] != null){
       str  = str + split[3]  ;    
     }  
+     if(split[4] != null){
+       str += " "
+      str  = str + split[4]  ;    
+    } 
 return str.trim();
   }))
   
